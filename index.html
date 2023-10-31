@@ -13,5 +13,34 @@
 </html>
 
 <script>
-window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+let ua = navigator.userAgent;
+  if (ua.match('HLYAPP') == 'HLYAPP' && /(iPhone|iPad|iPod|iOS)/i.test(ua)) 	   {
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+  }
+  else if (ua.match('HLYAPP') == 'HLYAPP' && /(Android)/i.test(ua)) 	   {
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+  }
+  else if (ua.match(/MicroMessenger/i) == 'MicroMessenger') 	   {
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+  }
+  else if (window.__wxjs_environment == 'miniprogram') 	   {
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+  }
+  else if (ua.match(/MicroMessenger/i) == "MicroMessenger" && ua.match(/miniprogram/i) == 'miniprogram') 	   {
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+  }
+  else if (ua.match(/WeiBo/i) == 'weibo') {
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+  } 
+  else{
+    window.location.href = "taobao://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
+
+  }
+window.location.href = "https://m.tb.cn/h.5Rkaqax?tk=klTNWXfRnUf"
 </script>
