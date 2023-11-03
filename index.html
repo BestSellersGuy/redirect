@@ -39,7 +39,10 @@
     }
     else if (ua.match(/WeiBo/i) == 'weibo') {
         window.location.href = "taobao://"+query
-    } 
+    }
+    else if (ua.match('/Android/i')){
+        window.location.href = "taobao://"+query
+    }
     else{
         window.location.href = "https://"+query
 
